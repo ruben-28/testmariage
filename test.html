@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Hebrew:wght@100..900&display=swap" rel="stylesheet">
+    <title>test mariage</title>
+</head>
+<body>
+    <audio loop autoplay muted>
+        <source src="test website/audios/haim sheli.mp3">
+    </audio>
+
+    <div id="home">
+        <h1>MICKAEL & SHIREL</h1>
+    </div>
+
+    <hr class="separation">
+
+    <div id="countdown">
+        <div class="text-container">
+            <h2>SAVE THE DATE</h2>
+            <p>Lundi 24 juin 2024</p>
+        </div>
+        <div id="timer">
+            <div class='tag'>
+                <span class='value'>-</span> 
+                <span class='label'>jours</span>
+            </div>
+            <div class='tag'>
+                <span class='value'>-</span>  
+                <span class='label'>heures</span>
+            </div>
+            <div class='tag'>
+                <span class='value'>-</span> 
+                <span class='label'>minutes</span>  
+            </div>
+            <div class='tag'>
+                <span class='value'>-</span> 
+                <span class='label'>secondes</span>   
+            </div>
+        </div>
+    </div>
+
+    <hr class="separation">
+
+    <script>
+        let countDown = new Date("Jun 24, 2024 17:00:00").getTime();
+        let x = setInterval(function(){
+            let now = new Date().getTime();
+            let distance = countDown - now;
+            let days = Math.floor(distance / (1000*60*60*24));
+            let hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
+            let minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
+            let seconds = Math.floor((distance % (1000*60)) / 1000);
+
+            document.querySelector("#timer").innerHTML = `
+                <div class='tag'>
+                    <span class='value'>${days}</span> 
+                    <span class='label'>jours</span>
+                </div>
+                <div class='tag'>
+                    <span class='value'>${hours}</span>  
+                    <span class='label'>heures</span>
+                </div>
+                <div class='tag'>
+                    <span class='value'>${minutes}</span> 
+                    <span class='label'>minutes</span>  
+                </div>
+                <div class='tag'>
+                    <span class='value'>${seconds}</span> 
+                    <span class='label'>secondes</span>   
+                </div>
+            `;
+
+            if(distance < 0) {
+                clearInterval(x);
+                document.querySelector("#timer").innerHTML = "<span>finish</span>";
+            }
+        }, 1000);
+    </script>
+
+<div id = "mairie">
+    <!-- <h1>MAIRIE</h1> -->
+    <div id="fond_transparent">
+
+    <div class ="txt">
+        <p id="oui">Mickael & Shirel</p>
+        <p id="txt_mairie">
+            Se diront;<br>
+        </p>
+        <p id="oui">"OUI"<br></p>
+         <p id="txt_mairie">
+            Le Lundi 24 Juin 2024<br>
+            
+            à 14h15 précises<br>
+            
+            A la mairie du 16ème<br>
+            
+            71 Av. Henri Martin,<br>
+            
+            75016 Paris<br>
+            
+            Un vin d’honneur suivra la cérémonie
+         </p>  
+        <a href="https://ul.waze.com/ul?place=Eig3MSBBdi4gSGVucmkgTWFydGluLCA3NTAxNiBQYXJpcywgRnJhbmNlIjASLgoUChIJJRIY9lZl5kcR5sFIZyy0PLgQRyoUChIJeYEVuVZl5kcRoBHhiKfPSgI&ll=48.86423470%2C2.27475430&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" 
+        target="_blank" class="btn">
+            voir l'itinairaire
+            
+        </a>
+
+    </div>
+
+    </div>
+</div>
+
+<hr class="separation">
+
+<div class="soirée">
+    <h1>קוֹל שָשוֹן וְקוֹל שִמְחָה קוֹל חָתָן וְקוֹל כָּלָה</h1>
+
+    <div>
+        <div class="invitation-container">
+            <p id="prnt1">
+                M. PLONi & Mme Plonit <br>
+                M. PLONi & Mme Plonit
+            </p>
+        
+            <p id="prnt2">
+                M. PLONi & Mme Plonit <br>
+                M. PLONi & Mme Plonit
+            </p>
+        </div>
+        
+
+        <div>
+            <p class="txt_soirée">
+                Sont heureux de vous faire part du mariage de leurs petits-enfants et enfants 
+            </p>
+
+            <h3 class="nom">
+                Mickael & Shirel
+            </h3>
+            <h3 class="nom_h">
+                מיכאל  <span class="amp">&nbsp; & &nbsp;</span>   שיראל
+            </h3>
+
+            <p class="txt_soirée">
+                et vous prient de les honorer de votre présence à la cérémonie religieuse qui sera célébrée <br>
+                le Mercredi 21 août 2024 à 17h00 <br>à la salle de mariage Cochav Hayam à Césarée en Israël. <br>
+                La houppa sera suivie de la soirée.
+            </p>
+        </div>
+
+        <a href=https://waze.com/ul/hsvbbccqn1 target="_blank" class="btn">
+            voir l'itinairaire
+            
+        </a>
+
+    </div>
+
+
+
+
+
+
+
+</div>
+<hr class="separation">
+
+<div id="RSVP">
+    <h1>REPONSE</h1>
+    <h2 id="rep">Merci de comfirmer votre réponse</h2>
+
+    <form action="response">
+        <div class="response">
+            <div class="name_field">
+                <div>
+                    <label class="Rlabel">Nom:<br></label>
+                    <input type="text">
+                </div>
+                <br>
+                <div>
+                    <label class="Rlabel">Prénom:<br></label>
+                    <input type="text">
+                </div>
+                <br>
+            </div>
+            <br>
+            <div class="checkbox-field">
+                <input type="checkbox">
+                <label class="Rlabel">Ne pourront pas assisster</label>
+            </div>
+            <br>
+           <div>
+            <label class="check_choice">
+                Assisseteront à : 
+            </label>
+            <br>
+                <input type="checkbox">
+                <label class="Rlabel">La Mairie</label>
+
+                <input type="checkbox">
+                <label class="Rlabel">La Houpa</label>
+
+                <input type="checkbox">
+                <label class="Rlabel">La Réception</label>
+           </div>
+           <br>
+
+           <label class="Rlabel">Nombre de personnes:</label>
+           <input type="number" min="0" max="15">
+           <br><br>
+           <label class="Rlabel">Messages aux mariés:</label>
+           <input type="text" placeholder="Mazal Tov !!!!" name="messageMariés">
+        </div>
+        
+    </form>
+
+</div>
+
+
+
+</body>
+</html>

@@ -21,9 +21,9 @@ body{
     margin-bottom: 0;
 }
 
-#home{
+#home{ 
     background-image: url('photos/demande 4.jpeg');
-    background-size: cover;
+    background-size: cover; 
     background-repeat: no-repeat;
     text-align: center;
     height: 100vh;

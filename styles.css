@@ -349,5 +349,325 @@ input[name="messageMariés"]::placeholder {
   
   #overlay.hidden {
     opacity: 0; /* Make overlay invisible */
-    pointer-events: none; /* Disable pointer events on the hidden overlay */
+    pointer-events: none; /* Disable pointer events on the hidden overlay */
   }
+
+ /* Styles par défaut */
+
+/* Ajoutez ici vos styles CSS existants */
+
+/* Point de rupture pour les téléphones */
+@media only screen and (max-width: 600px) {
+    .text-container {
+        text-align: center;
+    }
+    body{
+        margin: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    #home {
+        background-image: url('photos/demande_4_t.jpg');
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center; /* Pour centrer l'image */
+        text-align: center;
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    
+    #mairie{
+        background-image: url('photos/anneaux sur bqt.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height : 100vh;
+        display: flex;
+        text-align: center;
+     
+     
+       justify-content: center;
+    
+    
+    }
+    h1 {
+        font-size: 60px;
+        font-style: italic;
+        color: #e3a988;
+        font-family: 'Baguet Script', sans-serif;
+        display: flex; /* Utilisation de flexbox */
+        justify-content: center; /* Centrer horizontalement */
+        text-align: center;
+        margin-bottom: 0; /* Suppression de l'espace en dessous */
+        margin-top: 0;
+    }
+    
+    
+    h2{
+        font-size : 400%;
+        font-style: italic;
+        color : #bf8a3d;
+        font-family: 'Baguet Script', sans-serif;
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+    }
+    p{
+        color:#bf8a3d;
+        font-size: 50px;
+        font-style: italic;
+        font-weight: 500;
+        font-family: "Dancing Script", cursive;
+    
+    }
+    
+    #countdown{
+        background-color: #F5EEE6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; /* Add this line to display children vertically */
+        gap: 10px;
+        height: 70vj;
+    }
+    
+    
+    .tag{
+        width: 75px;
+        padding : 15px;
+        border-radius: 10px;
+        background-color: #87693a ; /* #e3a988 */
+        color: white;
+        text-align: center;
+    }
+    
+    .value{
+        display: block;
+        font-weight: 700;
+        font-size: 30px;
+        font-family: 'Baguet Script', sans-serif;
+    }
+    
+    .label{
+        text-align: center;
+        font-style: bold;
+        font-size: 110%;
+    }
+    
+    #oui{
+        font-family: 'Baguet Script Bold', sans-serif;
+        color: #bf8a3d;
+        font-style: italic;
+        opacity: 1; 
+       font-size: 350%;
+       margin-top: 0;
+       margin-bottom: 5%;
+    }
+    
+    
+    #timer{
+       
+        text-align: center;
+        display: flex;
+        gap: 0.7vw;
+        /* display: line; */
+    }
+    
+    #fond_transparent{
+        margin: 5%;
+        width: 35vw;
+        height: 75vh;
+        background: rgba(255, 255, 255, 0.3); /* Ajoutez une opacité au fond transparent */
+    }
+    
+    #txt_mairie{
+        color: black;
+        font-family: 'Baguet Script', sans-serif;
+        font-size: 200%;
+        font-style: normal;
+        
+        opacity: 1; /* Rendre le texte complètement opaque */
+        margin-top: 0;
+    }
+    
+    #RSVP {
+        background-color: #F5EEE6;
+        height: 100vh;
+        /* display: flex; */
+        /* flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center; Pour centrer le texte à l'intérieur des éléments enfants */
+    }
+    
+    
+    .response{
+        background-color: #f4e5d5;
+        height: 79vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .Rlabel{
+        font-size: 150%;
+        gap: 3vw;
+    }
+    
+    input[type="text"]
+    {
+        height : 3vh;
+        width: 20vw;
+    }
+    
+    input[type="number"]
+    {
+        height: 3vh;
+        width: 10vw;
+    }
+    
+    input[name="messageMariés"]
+    {
+        width: 25vw;
+        height: 10vh;
+    }
+    
+    input[name="messageMariés"]::placeholder {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 130%; /* Taille de police de la placeholder */
+        /* Vous pouvez également ajuster d'autres propriétés comme la couleur, si nécessaire */
+    }
+    
+    
+    
+    
+    .checkbox-field {
+        display: flex;
+        align-items: center;
+    }
+    
+    .checkbox-field input[type="checkbox"] {
+        margin-right: 10px; /* Espace entre la checkbox et le label */
+    }
+    
+    .check_choice{
+        display: flex;
+        justify-content: center;
+        font-size: 150%;
+        margin-bottom: 0;
+        font-style: italic;
+        font-weight: bold;
+    }
+    
+    .btn {
+        display: inline-block;
+        padding: 0.7% 2.5%; /* Espace intérieur du bouton (2% en haut/bas, 5% à gauche/droite) */
+        margin-top: 3%; /* Espacement entre le bouton et le contenu précédent */
+        border: 3px solid #bf8a3d; /* Bordure de 2px solide de couleur */
+        background-color: transparent; /* Fond transparent */
+        color: #bf8a3d; /* Couleur du texte */
+        text-decoration: none; /* Supprimer le soulignement par défaut sur le lien */
+        font-size: 2vw; /* Taille de la police (2.5% de la largeur de la fenêtre) */
+        font-weight: bold; /* Gras */
+        font-family: 'Dancing Script', cursive; /* Police */
+        transition: background-color 0.3s, color 0.3s; /* Transition douce pour les changements de couleur */
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .btn:hover {
+        background-color: #bf8a3d; /* Changement de couleur de fond au survol */
+        color: #fff; /* Changement de couleur du texte au survol */
+    }
+    
+    #rep{
+        font-size : 300%;
+        font-style: italic;
+        color : #d9946c;
+        font-family: 'Baguet Script', sans-serif;
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+    }
+    
+    .soirée{
+        height: 130vh;
+        background-color: #F5EEE6;
+        font-family: 'Baguet Script', sans-serif;
+        color : black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 0;
+    }
+    
+    .invitation-container {
+        display: flex; /* Utilisation de Flexbox */
+        justify-content: space-between; /* Les éléments enfants sont distribués de manière à ce que les marges extérieures soient égales */
+        align-items: center; /* Alignement vertical au centre */
+    }
+    
+    #prnt1 {
+        margin-left: 5%;
+        font-family: 'Baguet Script', sans-serif;
+        font-size: 250%;
+        color: black;
+    }
+    
+    #prnt2 {
+        margin-right: 5%;
+        font-family: 'Baguet Script', sans-serif;
+        font-size: 250%;
+        color: black;
+    }
+    
+    .txt_soirée{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Baguet Script', sans-serif;
+        font-size: 250%;
+        color: black;
+        margin-bottom: 0;
+    
+    }
+    
+    .nom{
+        display: flex;
+        justify-content: center;
+        font-family: "Dancing Script", cursive;
+        font-size: 100%;
+        color: #bf8a3d;
+        margin-bottom: 0;
+        margin-top: 0;
+    
+    }
+    .nom_h{
+        display: flex;
+        justify-content: center;
+        /* font-family: "Noto Serif Hebrew", cursive; */
+        font-family: 'Ozard_bold', cursive;
+        font-size: 100%;
+        color: #bf8a3d;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .amp{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-family: "Dancing Script", cursive;
+        font-size: 50%;
+        color: #bf8a3d;
+        margin-bottom: 0;
+        margin-top: 0.3;
+    }
+  }
+  

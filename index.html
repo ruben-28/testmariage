@@ -14,7 +14,7 @@
 
 
     <div id="overlay">
-        <a  class="btnLink" onclick=hideOverlay(); playMusic()> 
+        <a  class="btnLink" onclick=hideOverlay(); playMusic() > 
             voir
         </a>
 
@@ -34,10 +34,11 @@
     </script>
 
 
-    <audio id="myAudio" loop src="/audios/haim sheli.mp3"> </audio>
+    <audio id="myAudio" loop src="/audios/haim_sheli.mp3"> </audio>
 
     <script>
-        function playMusic() {
+        function playMusic()
+         {
             var audio = document.getElementById("myAudio");
             audio.play();
         }

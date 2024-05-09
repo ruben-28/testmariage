@@ -561,10 +561,13 @@ input[name="messageMariés"]::placeholder {
     }
     
     input[name="messageMariés"]::placeholder {
-    
-        font-size: 130%; /* Taille de police de la placeholder */
-        /* Vous pouvez également ajuster d'autres propriétés comme la couleur, si nécessaire */
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 130%;
+        /* Autres propriétés CSS selon vos besoins */
     }
+    
     
     
     

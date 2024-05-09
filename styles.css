@@ -27,6 +27,7 @@ body{
     background-repeat: no-repeat;
     text-align: center;
     height: 100vh;
+    
 }
 
 #mairie{
@@ -360,6 +361,7 @@ input[name="messageMariés"]::placeholder {
 @media only screen and (max-width: 600px) {
     .text-container {
         text-align: center;
+        font-size: 140%;
     }
     body{
         margin: 0;
@@ -405,7 +407,7 @@ input[name="messageMariés"]::placeholder {
     
     
     h2{
-        font-size : 100%;
+        font-size : 150%;
         font-style: italic;
         color : #bf8a3d;
         font-family: 'Baguet Script', sans-serif;
@@ -570,9 +572,9 @@ input[name="messageMariés"]::placeholder {
     
     .btn {
         display: inline-block;
-        padding: 0.7% 2.5%; /* Espace intérieur du bouton (2% en haut/bas, 5% à gauche/droite) */
+        padding: 1% 3%; /* Espace intérieur du bouton (2% en haut/bas, 5% à gauche/droite) */
         margin-top: 3%; /* Espacement entre le bouton et le contenu précédent */
-        border: 3px solid #bf8a3d; /* Bordure de 2px solide de couleur */
+        border: 1px solid #bf8a3d; /* Bordure de 2px solide de couleur */
         background-color: transparent; /* Fond transparent */
         color: #bf8a3d; /* Couleur du texte */
         text-decoration: none; /* Supprimer le soulignement par défaut sur le lien */

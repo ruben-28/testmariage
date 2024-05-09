@@ -556,17 +556,17 @@ input[name="messageMariés"]::placeholder {
     
     input[name="messageMariés"]
     {
-        width: 50vw;
+        width: 60vw;
         height: 7vh;
     }
     
-    input[name="messageMariés"]::placeholder {
+    /* input[name="messageMariés"]::placeholder {
         position: absolute;
         top: 0;
         left: 0;
         font-size: 130%;
         /* Autres propriétés CSS selon vos besoins */
-    }
+    /*} */
     
     
     

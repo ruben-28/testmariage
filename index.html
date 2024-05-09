@@ -47,9 +47,11 @@
     </script>
 
     
+  <div id="header">
     <div id="home">
-        <h1>MICKAEL & SHIREL</h1>
+        <h1 id="title">MICKAEL & SHIREL</h1>
     </div>
+  </div>
 
     <hr class="separation">
 
@@ -153,7 +155,7 @@
 <hr class="separation">
 
 <div class="soirée">
-    <h1>קוֹל שָשוֹן וְקוֹל שִמְחָה קוֹל חָתָן וְקוֹל כָּלָה</h1>
+    <h1 id="deco_soirée">קוֹל שָשוֹן וְקוֹל שִמְחָה קוֹל חָתָן וְקוֹל כָּלָה</h1>
 
     <div>
         <div class="invitation-container">
@@ -204,54 +206,57 @@
 </div>
 <hr class="separation">
 
-<div id="RSVP">
-    <h1>REPONSE</h1>
-    <h2 id="rep">Merci de comfirmer votre réponse</h2>
-
-    <form action="response">
-        <div class="response">
-            <div class="name_field">
-                <div>
-                    <label class="Rlabel">Nom:<br></label>
-                    <input type="text">
+<div id="footer">
+    <div id="RSVP">
+        <h1>REPONSE</h1>
+        <h2 id="rep">Merci de comfirmer votre réponse</h2>
+    
+        <form action="response">
+            <div class="response">
+                <div class="name_field">
+                    <div>
+                        <label class="Rlabel">Nom:<br></label>
+                        <input type="text">
+                    </div>
+                    <br>
+                    <div>
+                        <label class="Rlabel">Prénom:<br></label>
+                        <input type="text">
+                    </div>
+                    <br>
                 </div>
                 <br>
-                <div>
-                    <label class="Rlabel">Prénom:<br></label>
-                    <input type="text">
+                <div class="checkbox-field">
+                    <input type="checkbox">
+                    <label class="Rlabel">Ne pourront pas assisster</label>
                 </div>
                 <br>
+               <div>
+                <label class="check_choice">
+                    Assisseteront à : 
+                </label>
+                <br>
+                    <input type="checkbox">
+                    <label class="Rlabel">La Mairie</label>
+    
+                    <input type="checkbox">
+                    <label class="Rlabel">La Houpa</label>
+    
+                    <input type="checkbox">
+                    <label class="Rlabel">La Réception</label>
+               </div>
+               <br>
+    
+               <label class="Rlabel">Nombre de personnes:</label>
+               <input type="number" min="0" max="15">
+               <br><br>
+               <label class="Rlabel">Messages aux mariés:</label>
+               <input type="text" placeholder="Mazal Tov !!!!" name="messageMariés">
             </div>
-            <br>
-            <div class="checkbox-field">
-                <input type="checkbox">
-                <label class="Rlabel">Ne pourront pas assisster</label>
-            </div>
-            <br>
-           <div>
-            <label class="check_choice">
-                Assisseteront à : 
-            </label>
-            <br>
-                <input type="checkbox">
-                <label class="Rlabel">La Mairie</label>
-
-                <input type="checkbox">
-                <label class="Rlabel">La Houpa</label>
-
-                <input type="checkbox">
-                <label class="Rlabel">La Réception</label>
-           </div>
-           <br>
-
-           <label class="Rlabel">Nombre de personnes:</label>
-           <input type="number" min="0" max="15">
-           <br><br>
-           <label class="Rlabel">Messages aux mariés:</label>
-           <input type="text" placeholder="Mazal Tov !!!!" name="messageMariés">
-        </div>
-        
-    </form>
+            
+        </form>
+    
+    </div>
 
 </div>
 

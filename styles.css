@@ -367,18 +367,27 @@ input[name="messageMariés"]::placeholder {
         margin: 0;
         margin-top: 0;
         margin-bottom: 0;
+        /* background-color: #F5EEE6; */
     }
     
     #home {
-        background-image: url('photos/demande_4_t.jpg');
-        background-size: auto;
+        background-image: url('photos/demande_5_7.jpg');
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: bottom; /* Pour centrer l'image */
         text-align: bottom;
-        height: 33vh;
+        height: 80vh;
         width: auto;
+        
     }
+    #title{
+        /* background-color: #F3F3F5; */
+        font-size: 200%;
+    } 
     
+    #footer{
+        background-color: #F5EEE6;
+    } */
     
     #mairie{
         background-image: url('photos/bqt_tel.jpg');
@@ -480,7 +489,7 @@ input[name="messageMariés"]::placeholder {
         margin: 5%;
         width: 70vw;
         height: 63vh;
-        background: rgba(255, 255, 255, 0.7); /* Ajoutez une opacité au fond transparent */
+        background: rgba(237, 227, 227, 0.7); /* Ajoutez une opacité au fond transparent */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -501,6 +510,7 @@ input[name="messageMariés"]::placeholder {
     #RSVP {
         background-color: #F5EEE6;
         height: 90vh;
+        
         /* display: flex; */
         /* flex-direction: column;
         align-items: center;
@@ -674,6 +684,9 @@ input[name="messageMariés"]::placeholder {
         color: #bf8a3d;
         margin-bottom: 0;
         margin-top: 0.3;
+    }
+    #deco_soirée{
+        margin-bottom: 5vh;
     }
   }
   

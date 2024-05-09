@@ -329,3 +329,25 @@ input[name="messageMariés"]::placeholder {
     
 }
 
+#overlay {
+    background-image:linear-gradient( rgb(26, 26, 26), rgba(21, 21, 21, 0.5));
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fffaf4; /* Semi-transparent black background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1; /* Initially visible */
+    transition: opacity 0.5s; /* Smooth transition for opacity change */
+  }
+  
+  #overlay.hidden {
+    opacity: 0; /* Make overlay invisible */
+    pointer-events: none; /* Disable pointer events on the hidden overlay */
+  }

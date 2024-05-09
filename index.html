@@ -16,9 +16,14 @@
 
 
     <div id="overlay">
-        <a  class="btnLink" onclick=hideOverlay(); playMusic() > 
-            voir
+
+        <H1 id="overlayCtnt">MS</H1>
+        <a  class="btnLink" onclick="hideOverlay();  playMusic() ;"> 
+            voir l'invitation
         </a>
+
+        
+
 
 
     </div>
@@ -36,20 +41,22 @@
     </script>
 
 
-    <audio id="myAudio" loop src="/audios/haim_sheli.mp3"> </audio>
+    <audio id="myAudio" src="audios/haim_sheli.mp3"> </audio>
 
     <script>
         function playMusic()
          {
             var audio = document.getElementById("myAudio");
             audio.play();
-        }
+        }
     </script>
-
+   
+    
     
   <div id="header">
     <div id="home">
         <h1 id="title">MICKAEL & SHIREL</h1>
+        <i class="fa-duotone fa-angles-down"></i>
     </div>
   </div>
 

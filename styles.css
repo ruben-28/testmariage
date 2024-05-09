@@ -361,7 +361,7 @@ input[name="messageMariés"]::placeholder {
 @media only screen and (max-width: 600px) {
     .text-container {
         text-align: center;
-        font-size: 140%;
+        font-size: 160%;
     }
     body{
         margin: 0;
@@ -378,14 +378,19 @@ input[name="messageMariés"]::placeholder {
         text-align: bottom;
         height: 80vh;
         width: auto;
+        padding-top: 3vh;
+        font-size: 150%;
+        
         
     }
     #title{
         /* background-color: #F3F3F5; */
         font-size: 200%;
+        -webkit-text-stroke-color: #D49E7F;
+        -webkit-text-stroke-width: 0.1px;
     } 
     
-    #footer{
+   /* #footer{
         background-color: #F5EEE6;
     } */
     
@@ -410,7 +415,7 @@ input[name="messageMariés"]::placeholder {
         justify-content: center; /* Centrer horizontalement */
         text-align: center;
         margin-bottom: 0; /* Suppression de l'espace en dessous */
-        margin-top: 5%;
+        /* margin-top: 5%; */
         
     }
     
@@ -510,7 +515,7 @@ input[name="messageMariés"]::placeholder {
     #RSVP {
         background-color: #F5EEE6;
         height: 90vh;
-        
+        padding-top: 3vh;
         /* display: flex; */
         /* flex-direction: column;
         align-items: center;
@@ -518,7 +523,10 @@ input[name="messageMariés"]::placeholder {
         text-align: center; Pour centrer le texte à l'intérieur des éléments enfants */
     }
     
-    
+    #hRep{
+        font-size: 200%;
+    }
+
     .response{
         background-color: #f4e5d5;
         height: 79vh;

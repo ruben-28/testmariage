@@ -11,10 +11,41 @@
     <title>test mariage</title>
 </head>
 <body>
-    <audio loop autoplay muted>
-        <source src="test website/audios/haim sheli.mp3">
+
+
+    <div id="overlay">
+        <a  class="btnLink" onclick=hideOverlay(); playMusic()> 
+            voir
+        </a>
+
+
+    </div>
+
+    <script>
+        document.body.classList.add("no-scroll")
+
+        function hideOverlay() {
+        var overlay = document.getElementById('overlay');
+        overlay.classList.add('hidden'); // Ajoute la classe hidden pour masquer l'overlay
+        document.body.classList.remove("no-scroll"); // Retire la classe no-scroll pour permettre le défilement
+
+        }
+
+    </script>
+
+
+    <audio id="myAudio" loop>
+        <source src="/audios/haim sheli.mp3">
     </audio>
 
+    <script>
+        function playMusic() {
+            var audio = document.getElementById("myAudio");
+            audio.play();
+        }
+    </script>
+
+    
     <div id="home">
         <h1>MICKAEL & SHIREL</h1>
     </div>

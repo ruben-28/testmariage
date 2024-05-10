@@ -407,6 +407,7 @@ input[name="messageMariés"]::placeholder {
         margin-bottom: 0;
         /* background-color: #F5EEE6; */
         width: auto;
+        
     }
     
     #home {
@@ -440,8 +441,8 @@ input[name="messageMariés"]::placeholder {
         height : 80vh;
         display: flex;
         text-align: center;
-       justify-content: center;
-       align-items: center;
+        justify-content: center;
+        align-items: center;
     
     
     }
@@ -470,7 +471,7 @@ input[name="messageMariés"]::placeholder {
     }
     p{
         color:#bf8a3d;
-        font-size: 50px;
+        font-size: 160%;
         font-style: italic;
         font-weight: 500;
         font-family: "Dancing Script", cursive;
@@ -489,12 +490,16 @@ input[name="messageMariés"]::placeholder {
     
     
     .tag{
-        width: 10%;
-        padding : 15px;
-        border-radius: 10px;
+        width: 5vh;
+        height: 5vh;
+        padding : 5vw;
+        border-radius: 10%;
         background-color: #87693a ; /* #e3a988 */
         color: white;
+        /* text-align: center; */
         text-align: center;
+        justify-content: center;
+        align-items: center;
     }
     
     .value{
@@ -502,12 +507,14 @@ input[name="messageMariés"]::placeholder {
         font-weight: 700;
         font-size: 30px;
         font-family: 'Baguet Script', sans-serif;
+        
     }
     
     .label{
         text-align: center;
         font-style: bold;
-        font-size: 110%;
+        font-size: 100%;
+        
     }
     
     #oui{
@@ -531,13 +538,14 @@ input[name="messageMariés"]::placeholder {
     
     #fond_transparent {
         margin: 5%;
-        width: 70vw;
-        height: 63vh;
+        width: 78vw;
+        height: 75vh;
         background: rgba(237, 227, 227, 0.7); /* Ajoutez une opacité au fond transparent */
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
+        font-size: 130%;
        
     }
     
@@ -593,7 +601,7 @@ input[name="messageMariés"]::placeholder {
     }
     
     input[name="messageMariés"] {
-        width: 40vw;
+        width: 60vw;
         height: 10vh;
         padding: 1px; /* Add padding to ensure enough space for the placeholder */
         
@@ -615,6 +623,7 @@ input[name="messageMariés"]::placeholder {
     .checkbox-field {
         display: flex;
         align-items: center;
+        justify-content: center;
     }
     
     .checkbox-field input[type="checkbox"] {
@@ -624,10 +633,12 @@ input[name="messageMariés"]::placeholder {
     .check_choice{
         display: flex;
         justify-content: center;
-        font-size: 150%;
+        font-size: 120%;
         margin-bottom: 0;
         font-style: italic;
         font-weight: bold;
+        align-items: center;
+        text-align: center;
     }
     
     .btn {
@@ -784,3 +795,4 @@ input[name="messageMariés"]::placeholder {
 
   }
   
+

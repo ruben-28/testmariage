@@ -487,8 +487,8 @@ input[name="messageMariés"]::placeholder {
     
     
     .tag{
-        width: 75px;
-        padding : 15px;
+        width: 50%;
+        padding : 20%;
         border-radius: 10px;
         background-color: #87693a ; /* #e3a988 */
         color: white;
@@ -591,7 +591,7 @@ input[name="messageMariés"]::placeholder {
     }
     
     input[name="messageMariés"] {
-        width: 25vw;
+        width: 40vw;
         height: 10vh;
         padding: 1px; /* Add padding to ensure enough space for the placeholder */
         
@@ -741,6 +741,7 @@ input[name="messageMariés"]::placeholder {
 
     #overlay{
         height: 90vh;
+
     }
 
 
@@ -752,6 +753,8 @@ input[name="messageMariés"]::placeholder {
         -webkit-text-stroke-color: #D49E7F;
         -webkit-text-stroke-width: 0.5px;
         margin-bottom: 10vh;
+        
+        
     }
 
     .btnLink{

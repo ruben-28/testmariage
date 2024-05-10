@@ -487,8 +487,8 @@ input[name="messageMariés"]::placeholder {
     
     
     .tag{
-        width: 30%;
-        padding : 20%;
+        width: 75px;
+        padding : 15px;
         border-radius: 10px;
         background-color: #87693a ; /* #e3a988 */
         color: white;

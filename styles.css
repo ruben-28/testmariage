@@ -20,6 +20,7 @@ body{
     margin-top: 0;
     margin-bottom: 0;
     
+    
 }
 
 #home{ 
@@ -405,6 +406,7 @@ input[name="messageMariés"]::placeholder {
         margin-top: 0;
         margin-bottom: 0;
         /* background-color: #F5EEE6; */
+        width: auto;
     }
     
     #home {
@@ -487,7 +489,7 @@ input[name="messageMariés"]::placeholder {
     
     
     .tag{
-        width: 75px;
+        width: 10%;
         padding : 15px;
         border-radius: 10px;
         background-color: #87693a ; /* #e3a988 */

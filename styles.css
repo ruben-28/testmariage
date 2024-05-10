@@ -362,13 +362,13 @@ input[name="messageMariés"]::placeholder {
   .btnLink{
     /* margin-top: 10vh; */
     display: inline-block;
-    padding: 0.4% , 1.1%; /* Espace intérieur du bouton (2% en haut/bas, 5% à gauche/droite) */
+    padding: 0.4% , 2%; /* Espace intérieur du bouton (2% en haut/bas, 5% à gauche/droite) */
     /* margin-top: 3%; Espacement entre le bouton et le contenu précédent */
     border: 3px solid #bf8a3d; /* Bordure de 2px solide de couleur */
     background-color: transparent; /* Fond transparent */
     color: #bf8a3d; /* Couleur du texte */
     text-decoration: none; /* Supprimer le soulignement par défaut sur le lien */
-    font-size: 4vw; /* Taille de la police (2.5% de la largeur de la fenêtre) */
+    font-size: 170%; /* Taille de la police (2.5% de la largeur de la fenêtre) */
     font-weight: bold; /* Gras */
     font-family: 'Dancing Script', cursive; /* Police */
     transition: background-color 0.3s, color 0.3s; /* Transition douce pour les changements de couleur */

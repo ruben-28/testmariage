@@ -514,6 +514,8 @@ input[name="messageMariés"]::placeholder {
         text-align: center;
         font-style: bold;
         font-size: 100%;
+        justify-content: center;
+        display: flex;
         
     }
     
@@ -545,7 +547,7 @@ input[name="messageMariés"]::placeholder {
         justify-content: center;
         align-items: center;
         text-align: center;
-        font-size: 130%;
+        font-size: 120%;
        
     }
     
@@ -747,9 +749,8 @@ input[name="messageMariés"]::placeholder {
         margin-bottom: 0;
         margin-top: 0.3;
     }
-    #deco_soirée{
-        margin-bottom: 5vh;
-    }
+    /* #deco_soirée{
+    } */
 
 
     #overlay{

@@ -537,7 +537,7 @@ input[name="messageMariés"]::placeholder {
     }
     
     #fond_transparent {
-        margin: 5%;
+        /*margin: 5%;*/
         width: 78vw;
         height: 75vh;
         background: rgba(237, 227, 227, 0.7); /* Ajoutez une opacité au fond transparent */

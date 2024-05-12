@@ -798,7 +798,11 @@ input[name="messageMariés"]::placeholder {
         height: 5vh;
         background-color: #F5EEE6;
         padding: 5%;
-    
+        /* display: flex; Utilisation de Flexbox */
+        justify-content: space-evenly; /* Les éléments enfants sont distribués de manière à ce que les marges extérieures soient égales */
+        align-items: center; /*Alignement vertical au centre */
+        font-size: 120%;
+        
     }
 
     .contactBtn{
@@ -806,7 +810,7 @@ input[name="messageMariés"]::placeholder {
         color: black;
         border: 2px solid black;
         border-radius: 5%;
-        padding: 1% 3%;
+        padding: 1% 10%;
         border-radius: 5rem;
         /* background-color: white;
         
@@ -820,13 +824,14 @@ input[name="messageMariés"]::placeholder {
     .mail{
         padding-right: 1%;
         font-size: 110%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+  
     }
 
-   
+   .insta{
+        padding-right: 1%;
+        font-size: 110%;
+       
+   }
 
   }
   

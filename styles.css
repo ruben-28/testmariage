@@ -794,6 +794,29 @@ input[name="messageMariés"]::placeholder {
         color: #fff; /* Changement de couleur du texte au survol */
     }
 
+    .contact{
+        height: 5vh;
+        background-color: #F5EEE6;
+        padding: 5%;
+    
+    }
+
+    .contactBtn{
+        text-decoration: none;
+        color: black;
+        border: black;
+        border-radius: 5%;
+        /* background-color: white;
+        padding: 1% 3%;
+        border-radius: 5000px; */
+        font-weight: 500;
+        
+        
+        
+    }
+
+   
+
   }
   
 

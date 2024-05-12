@@ -221,17 +221,17 @@
         <h1 id="hRep">REPONSE</h1>
         <h2 id="rep">Merci de comfirmer votre réponse</h2>
     
-        <form action="response">
+        <form action="https://formsubmit.co/invitecard.website@gmail.com" >
             <div class="response">
                 <div class="name_field">
                     <div>
                         <label class="Rlabel">Nom:<br></label>
-                        <input type="text">
+                        <input type="text" name="nom">
                     </div>
                     <br>
                     <div>
                         <label class="Rlabel">Prénom:<br></label>
-                        <input type="text">
+                        <input type="text" name="prénom">
                     </div>
                     <br>
                 </div>
@@ -262,6 +262,8 @@
                <br><br>
                <label class="Rlabel">Messages aux mariés:</label>
                <input type="text" placeholder="Mazal Tov !!!!" name="messageMariés" style="position: top;  justify-content: top; display: inline-block;" >
+
+               <button class="sendemail">envoyer</button>
             </div>
             
         </form>
@@ -270,11 +272,28 @@
 
 </div>
 
+<!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){
+        Email.send({
+    Host : "smtp.gmail.com",
+    Username : "rubensbensimon@gmail.com",
+    Password : "mbsthnsmfprfuhxd",
+    To : 'rubensbensimon@gmail.com',
+    From : "invitecard.website@gmail.com",
+    Subject : "Nouvelle réponse à l'invitation de mariage",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+    }
+</script> -->
+
 <hr class="separation">
 
 <div class="contact">
     
-    <a href="mailto:invitecard.website@gmail.com" class="contactBtn"> <i class="fa-regular fa-envelope mail"></i>contact me</a>
+    <a href="mailto:invitecard.website@gmail.com" class="contactBtn"> <i class="fa-regular fa-envelope mail"></i>CONTACT ME</a>
     <a href="https://www.instagram.com/ruben_bensimon/" class="contactBtn"><i class="fa-brands fa-instagram insta"></i>CONTACT ME</a>
 
 </div>

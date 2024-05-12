@@ -391,6 +391,58 @@ input[name="messageMariés"]::placeholder {
     -webkit-text-stroke-width: 0.5px;
     margin-bottom: 10vh;}
 
+    .sendemail{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1%;
+        font-size: 120%;
+        border-radius: 5rem;
+        padding: 1% 3%;
+
+    }
+    
+    .contact{
+        height: 7vh;
+        background-color: #F5EEE6;
+        /* padding: 5%; */
+        display: inline-flex;
+        justify-content: center; /* Les éléments enfants sont distribués de manière à ce que les marges extérieures soient égales */
+        align-items: center; /*Alignement vertical au centre */
+        font-size: 100%;   
+        width: 100vw;     
+    }
+
+    .contactBtn{
+        text-decoration: none;
+        color: black;
+        border: 2px solid black;
+        border-radius: 5%;
+        padding: 1% 5%;
+        border-radius: 5rem;
+        /* background-color: white;
+        
+        border-radius: 5000px; */
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+
+    .mail{
+        padding-right: 1%;
+        font-size: 110%;
+  
+    }
+
+   .insta{
+        padding-right: 1%;
+        font-size: 110%;
+       
+   }
+
  /* Styles par défaut */
 
 /* Ajoutez ici vos styles CSS existants */
@@ -794,6 +846,18 @@ input[name="messageMariés"]::placeholder {
         color: #fff; /* Changement de couleur du texte au survol */
     }
 
+
+    .sendemail{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+        font-size: 150%;
+        border-radius: 5rem;
+        padding: 2% 5%;
+
+    }
+
     .contact{
         height: 5vh;
         background-color: #F5EEE6;
@@ -801,7 +865,7 @@ input[name="messageMariés"]::placeholder {
         /* display: flex; Utilisation de Flexbox */
         justify-content: space-evenly; /* Les éléments enfants sont distribués de manière à ce que les marges extérieures soient égales */
         align-items: center; /*Alignement vertical au centre */
-        font-size: 120%;
+        font-size: 100%;
         
     }
 
@@ -810,7 +874,7 @@ input[name="messageMariés"]::placeholder {
         color: black;
         border: 2px solid black;
         border-radius: 5%;
-        padding: 1% 10%;
+        padding: 1% 8%;
         border-radius: 5rem;
         /* background-color: white;
         

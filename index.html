@@ -221,7 +221,7 @@
         <h1 id="hRep">REPONSE</h1>
         <h2 id="rep">Merci de comfirmer votre réponse</h2>
     
-        <form action="https://formsubmit.co/invitecard.website@gmail.com" >
+        <form id="rsvpForm" >
             <div class="response">
                 <div class="name_field">
                     <div>
@@ -238,7 +238,7 @@
                 <br>
                 <div class="checkbox-field">
                     <input type="checkbox">
-                    <label class="Rlabel">Ne pourront pas assisster</label>
+                    <label class="Rlabel" name="vientPas" id="AssisseterontPas">Ne pourront pas assisster</label>
                 </div>
                 <br>
                <div>
@@ -247,23 +247,23 @@
                 </label>
                 <br>
                     <input type="checkbox">
-                    <label class="Rlabel">La Mairie</label>
+                    <label class="Rlabel" name="mairie" id="AssisseterontALaMairie">La Mairie</label>
     
                     <input type="checkbox">
-                    <label class="Rlabel">La Houpa</label>
+                    <label class="Rlabel" name="houpa" id="AssisseterontALaHoupa">La Houpa</label>
                     <br>
                     <input type="checkbox">
-                    <label class="Rlabel">La Réception</label>
+                    <label class="Rlabel" name="reception" id="AssisseterontALaReception">La Réception</label>
                </div>
                <br>
     
                <label class="Rlabel">Nombre de personnes:</label>
-               <input type="number" min="0" max="15">
+               <input type="number" min="0" max="15" name="numberOfGuests">
                <br><br>
                <label class="Rlabel">Messages aux mariés:</label>
                <input type="text" placeholder="Mazal Tov !!!!" name="messageMariés" style="position: top;  justify-content: top; display: inline-block;" >
 
-               <button class="sendemail">envoyer</button>
+               <button id="sendEmailBtn"  class="sendemail" action="mailer.php">envoyer</button>
             </div>
             
         </form>
@@ -272,22 +272,95 @@
 
 </div>
 
-<!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
-<script>
-    function sendEmail(){
-        Email.send({
-    Host : "smtp.gmail.com",
-    Username : "rubensbensimon@gmail.com",
-    Password : "mbsthnsmfprfuhxd",
-    To : 'rubensbensimon@gmail.com',
-    From : "invitecard.website@gmail.com",
-    Subject : "Nouvelle réponse à l'invitation de mariage",
-    Body : "And this is the body"
-}).then(
-  message => alert(message)
-);
-    }
+<!-- <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var form = document.getElementById('rsvpForm');
+    var sendEmailBtn = document.getElementById('sendEmailBtn');
+
+    sendEmailBtn.addEventListener('click', function(event) { // Ajoute un écouteur d'événements sur le clic du bouton
+        event.preventDefault(); // Empêche la soumission normale du formulaire
+
+        // Récupérer les valeurs des champs du formulaire
+        var nom = document.querySelector('input[name="nom"]').value;
+        var prenom = document.querySelector('input[name="prénom"]').value;
+        var vientPas = document.querySelector('input[name="vientPas"]').checked;
+        var mairie = document.querySelector('input[name="mairie"]').checked;
+        var houpa = document.querySelector('input[name="houpa"]').checked;
+        var reception = document.querySelector('input[name="reception"]').checked;
+        var numberOfGuests = document.querySelector('input[name="numberOfGuests"]').value;
+        var messageMariés = document.querySelector('input[name="messageMariés"]').value;
+        // Récupérer d'autres champs si nécessaire
+
+        var formData = new FormData();
+    formData.append("Nom", nom);
+    formData.append("Prénom", prénom);
+    formData.append("Message au mariés", messageMariés);
+    formData.append("Nombre de personnes", numberOfGuests);
+    formData.append("Assisteront à la réception", reception ? "Oui" : "Non");
+    formData.append("Assisteront à la houpa", houpa ? "Oui" : "Non");
+    formData.append("Assisteront à la mairie", mairie ? "Oui" : "Non");
+    formData.append("Ne pourront pas assister", vientPas ? "Oui" : "Non");
+
+    // Envoyer le formulaire via Formspree
+    fetch('https://formspree.io/f/mpzvblgd', {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(function(response) {
+        if (response.ok) {
+            alert('Formulaire soumis avec succès!');
+        } else {
+            alert('Erreur lors de la soumission du formulaire.');
+        }
+    }).catch(function(error) {
+        console.error('Erreur:', error);
+    });
+});
+});
+
 </script> -->
+
+<!-- <script>
+    // Sélection des cases à cocher
+var nePourrontAssisterCheckbox = document.getElementById('AssisseterontPas');
+var receptionCheckbox = document.getElementById('AssisseterontALaReception');
+var HoupaCheckbox = document.getElementById('AssisseterontALaHoupa');
+var mairieCheckbox = document.getElementById('AssisseterontALaMairie');
+
+// Écouteurs d'événements sur le changement des cases à cocher
+receptionCheckbox.addEventListener('change', function() {
+    // Si "Assisteront à la réception" est cochée, décocher "Ne pourront pas assister"
+    if (receptionCheckbox.checked) {
+        nePourrontAssisterCheckbox.checked = false;
+    }
+});
+
+HoupaCheckbox.addEventListener('change', function() {
+    // Si "Assisteront à la mise des téphiline" est cochée, décocher "Ne pourront pas assister"
+    if (HoupaCheckbox.checked) {
+        nePourrontAssisterCheckbox.checked = false;
+    }
+});
+
+mairieCheckbox.addEventListener('change', function() {
+    // Si "Assisteront à la mairie" est cochée, décocher "Ne pourront pas assister"
+    if (mairieCheckbox.checked) {
+        nePourrontAssisterCheckbox.checked = false;
+    }
+});
+
+nePourrontAssisterCheckbox.addEventListener('change', function() {
+    // Si "Ne pourront pas assister" est cochée, décocher les autres cases
+    if (nePourrontAssisterCheckbox.checked) {
+        receptionCheckbox.checked = false;
+        HoupaCheckbox.checked = false;
+        mairieCheckbox.checked = false;
+    }
+});
+</script> -->
+
 
 <hr class="separation">
 

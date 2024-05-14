@@ -666,10 +666,13 @@ input[name="messageMariés"]::placeholder {
          /* Set position to absolute */
         top: 0; /* Position placeholder at the top */
         left: 0; /* Position placeholder at the left */
-        padding-top: 1px; /* Add padding to ensure enough space around the text */
+        /* Add padding to ensure enough space around the text */
         /* justify-content: top;
         margin-bottom: 0;
         text-align: top; */
+        justify-content: top;
+        align-items: top;
+        text-align: top;
     }
     
     
